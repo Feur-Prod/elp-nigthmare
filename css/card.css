@@ -1,0 +1,30 @@
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 0px 5px #000000a0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    gap: 30px;
+    background-color: #c7c7c7;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+.card:hover{
+    background-color: #BB0000;
+    scale: 1.1;
+    rotate: 5deg;
+}
