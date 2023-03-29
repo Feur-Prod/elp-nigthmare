@@ -3,6 +3,16 @@
     padding: 0px;
 }
 
+
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -128,9 +138,9 @@ header {
     font-size: 18px;
 }
 
-#trailer button:hover{
-    scale:1.1;
-    color:#000000;
+#trailer button:hover {
+    scale: 1.1;
+    color: #000000;
     cursor: pointer;
 }
 
@@ -203,14 +213,14 @@ header {
 
 }
 
-#logo{
+#logo {
     display: flex;
     justify-content: center;
     transition: all 200ms ease-in-out;
     width: 300px;
 }
 
-#logo:hover{
+#logo:hover {
     scale: 1.1;
 }
 
