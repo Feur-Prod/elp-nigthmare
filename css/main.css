@@ -1,84 +1,91 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.marg{
-    width: 100%;
+.marg {
+    width: 70%;
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     margin-top: 0;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 
-.main_content{
+.main_content {
     width: 70%;
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     margin-top: 0;
 }
 
-header{
-    background: linear-gradient(90deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.50) 100%),url("../assets/images/infirmerie.jpg") fixed center no-repeat;
+header {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.75) 100%), url("../assets/images/infirmerie.jpg") fixed center no-repeat;
     width: 100%;
     margin: 0;
     height: 600px;
     margin-bottom: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/*Techno Utilisées*/
-.techno{
-    width: 100px;   
+#presentation {
+    font-size: 27px;
 }
-#techno{
+
+/*Techno Utilisées*/
+.techno {
+    width: 100px;
+}
+
+#techno {
     padding-top: 20px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     background-color: white;
     color: black;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
-.tech{
+
+.tech {
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     width: 70%;
 }
 
 /*Histoire*/
 
-#histoire{
+#histoire {
     padding-top: 20px;
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-indent: 50px;
+    /*background: linear-gradient(90deg, #78000030 0%, #bb000030 50%, #78000030), url("../assets/images/Render_0-00-06-22.png") fixed center no-repeat;*/
     background-color: rgb(223, 223, 223);
     width: 100%;
 }
 
-#histo{
+#histo {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -87,40 +94,150 @@ header{
 
 /*Support*/
 
-#trailer{
+#trailer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
     gap: 40px;
+
+    background-color: #212121;
+    background: linear-gradient(90deg, #212121a0 0%, #212121a0), url("../assets/images/Render_0-00-06-22.png") fixed center no-repeat;
+    color: white;
+}
+
+#trailer button {
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: #BB0000;
+    color: white;
+
+}
+
+#trailer p {
+    font-size: 18px;
 }
 
 
 /*------------------------------------Contact---------------------------------*/
-#contact{
+#contact {
+    padding-top: 20px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 70%;
+    align-items: center;
+    width: 100%;
     background-color: goldenrod;
 }
 
-.pres{
+#contact_marg {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.pres {
     display: flex;
     flex-flow: row wrap;
     list-style-type: none;
-    gap: 3px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
 }
 
-.pres li{
+.pres li {
+    color: black;
+    font-size: 20px;
     display: flex;
-    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
+
+    border-radius: 25px;
+
+    height: 325px;
+    width: 300px;
+
+    transition: all 200ms ease-in-out;
 }
 
-.pres img{
+.pres img {
     width: 250px;
     height: 250px;
+}
+
+.pres li p {
+    font-weight: 600;
+}
+
+.pres li a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+.pres li:hover {
+    scale: 0.98;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.219);
+
+}
+
+/* Footer */
+footer {
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(55, 71, 79);
+    color: white;
+}
+
+#foot_marg {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#foot_img {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 70%;
+    font-size: 15px;
+}
+
+footer img {
+    width: 125px;
+}
+
+footer a {
+    color: rgb(255, 165, 0);
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

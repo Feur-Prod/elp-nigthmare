@@ -1,16 +1,16 @@
-nav{
+nav {
     width: 100%;
-    background: linear-gradient(90deg,  #780000 0%, #BB0000 50%, #780000 100%);
+    background: linear-gradient(90deg, #780000 0%, #BB0000 50%, #780000 100%);
     position: sticky;
     top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     width: 100%;
     display: flex;
@@ -18,31 +18,33 @@ nav ul{
     align-items: center;
 }
 
-nav ul li{
+nav ul li {
     float: left;
     margin: auto;
     text-align: center;
     position: relative;
 }
 
-nav ul::after{
+nav ul::after {
     content: "";
     display: table;
     clear: both;
 }
 
-nav a{
+nav a {
     display: block;
     text-decoration: none;
     color: white;
     border-bottom: 2px solid transparent;
+    font-size: 20px;
+    transition: all 100ms ease-in-out;
 }
 
-nav a:hover{
+nav a:hover {
     border-bottom: 2px solid goldenrod;
 }
 
-.sous{
+.sous {
     display: none;
     box-shadow: 0px 1px 2px #CCC;
     background-color: black;
@@ -50,28 +52,33 @@ nav a:hover{
     width: 100%;
     z-index: 1000;
 }
-nav > ul li:hover .sous{
+
+nav>ul li:hover .sous {
     display: block;
 }
-.sous li{
+
+.sous li {
     float: none;
     width: 100%;
     text-align: left;
 }
-.sous a{
+
+.sous a {
     padding: 10px;
     border-bottom: none;
 }
-.sous a:hover{
+
+.sous a:hover {
     border-bottom: none;
-    background-color: rgba(200,200,200,0.1);
+    background-color: rgba(200, 200, 200, 0.1);
 }
-.deroulant > a::after{
-    content:" ▼";
+
+.deroulant>a::after {
+    content: " ▼";
     font-size: 12px;
 }
 
-.conteneur{
-  margin: 50px 20px;
-  height: 1500px;
+.conteneur {
+    margin: 50px 20px;
+    height: 1500px;
 }
